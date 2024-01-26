@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="hr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tea Lovrić</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+<body id="body">
+    <header>
+        <div class="logo"><h1>Tea Lovrić</h1></div>
+        <div class="navigation-links">
+            <a href="#">Works</a>
+            <a href="#">Exhibitions</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </header>
+    <hr color="gray" class="line">
+    <content>
+        <img class="gallery-item" src="gallery/1.jfif" onclick="imagePreview(this)">
+        <img class="gallery-item" src="gallery/2.jfif" onclick="imagePreview(this)">
+        <img class="gallery-item" src="gallery/3.jfif" onclick="imagePreview(this)">
+        <img class="gallery-item" src="gallery/4.jfif" onclick="imagePreview(this)">
+        <img class="gallery-item" src="gallery/5.jfif" onclick="imagePreview(this)">
+        <img class="gallery-item" src="gallery/6.jfif" onclick="imagePreview(this)">
+        <img class="gallery-item" src="gallery/7.jfif" onclick="imagePreview(this)">
+        <img class="gallery-item" src="gallery/8.jfif" onclick="imagePreview(this)">
+        <img class="gallery-item" src="gallery/9.jfif" onclick="imagePreview(this)">
+        <img class="gallery-item" src="gallery/10.jfif" onclick="imagePreview(this)">
+        <img class="gallery-item" src="gallery/11.jfif" onclick="imagePreview(this)">
+        <img class="gallery-item" src="gallery/12.jfif" onclick="imagePreview(this)">
+        <img class="gallery-item" src="gallery/13.jfif" onclick="imagePreview(this)">
+        <img class="gallery-item" src="gallery/14.jfif" onclick="imagePreview(this)">
+        <img class="gallery-item" src="gallery/15.jfif" onclick="imagePreview(this)">
+        <img class="gallery-item" src="gallery/16.jfif" onclick="imagePreview(this)">
+        <img class="gallery-item" src="gallery/17.jpg" onclick="imagePreview(this)">
+        <img class="gallery-item" src="gallery/18.jpg" onclick="imagePreview(this)">
+        <img class="gallery-item" src="gallery/19.jpg" onclick="imagePreview(this)">
+        <img class="gallery-item" src="gallery/20.jpg" onclick="imagePreview(this)">
+        <img class="gallery-item" src="gallery/21.jpg" onclick="imagePreview(this)">
+
+    </content>
+</body>
+<div class="image-preview-box" id="image-preview-box" onclick="closeImagePreview()">
+    <img src="" id="image-preview" class="image-preview">
+</div>
+<script>
+function imagePreview(element) {
+    console.log(element.src)
+    url = element.src;
+    document.getElementById("image-preview-box").style.display = "flex";
+    document.getElementById("image-preview").src = url;
+    document.getElementById("body").style = "overflow: hidden"
+}
+function closeImagePreview() {
+    document.getElementById("image-preview-box").style.display = "none";
+    document.getElementById("image-preview").src = "";
+    document.getElementById("body").style = "overflow: auto"
+}
+</script>
+</html>

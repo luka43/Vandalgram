@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Edo Hrzenjak</title>
+</head>
+<body>
+
+    <div class="zoom-box" id="gallery-item-1">
+        <img src="gallery/slika2.jpg">
+        <a class="zoom-box-close" href="#"></a>
+    </div>
+    <div class="zoom-box" id="gallery-item-2">
+        <img src="gallery/slika1.jpg">
+        <a class="zoom-box-close" href="#"></a>
+    </div>
+    <div class="zoom-box" id="gallery-item-3">
+        <img src="gallery/slika6.jpg">
+        <a class="zoom-box-close" href="#"></a>
+    </div>
+    <div class="zoom-box" id="gallery-item-4">
+        <img src="gallery/slika3.jpg">
+        <a class="zoom-box-close" href="#"></a>
+    </div>
+    <div class="zoom-box" id="gallery-item-5">
+        <img src="gallery/slika4.jpg">
+        <a class="zoom-box-close" href="#"></a>
+    </div>
+    <div class="zoom-box" id="gallery-item-6">
+        <img src="gallery/slika5.jpg">
+        <a class="zoom-box-close" href="#"></a>
+    </div>
+    <div class="zoom-box" id="gallery-item-7">
+        <img src="gallery/slika1.jpg">
+        <a class="zoom-box-close" href="#"></a>
+    </div>
+    <div class="zoom-box" id="gallery-item-8">
+        <img src="gallery/slika2.jpg">
+        <a class="zoom-box-close" href="#"></a>
+    </div>
+    <header>
+        <div class="logo-box">
+            <a href="index.html">
+            <img src="gallery/logo.jpg" class="logo">
+            </a>
+            </div><ul class="navigation-links">
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="dropdown-menu">
+                <button class="dropdown-menu-button">=</button>
+                <div class="dropdown-menu-content">
+                    <a href="index.html#2023">2023</a>
+                    <a href="index.html#2019">2019</a>
+                    <a href="index.html#2016">2016</a>
+                  </div>
+              </div>
+    </header>
+    <div class="content">
+
+        <main class="gallery-grid">
+
+                <a class="gallery-post" href="#gallery-item-1" >
+                <img src="gallery/slika2.jpg" class="gallery-img">
+                </a>
+
+                <a class="gallery-post" href="#gallery-item-2">
+                <img src="gallery/slika1.jpg" class="gallery-img">
+                </a>
+
+
+                <a class="gallery-post" href="#gallery-item-3">
+                <img src="gallery/slika6.jpg" class="gallery-img">
+                </a>
+
+
+                <a class="gallery-post" href="#gallery-item-4">
+                <img src="gallery/slika3.jpg" class="gallery-img">
+                </a>
+
+
+                <a class="gallery-post" href="#gallery-item-5">
+                <img src="gallery/slika4.jpg" class="gallery-img">
+                </a>
+
+
+                <a class="gallery-post" href="#gallery-item-6">
+                <img src="gallery/slika5.jpg" class="gallery-img">
+                </a>
+
+
+                <a class="gallery-post" href="#gallery-item-7">
+                <img src="gallery/slika1.jpg" class="gallery-img">
+                </a>
+
+
+                <a class="gallery-post" href="#gallery-item-8">
+                <img src="gallery/slika2.jpg" class="gallery-img">
+                </a>
+
+        </main>
+        <div class="content-end">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+    <div class="footer"><p>Developed by Luka Vukalović © 2023</p></div>
+    <button onclick="topFunction()" id="to-top" title="Back to top"><h2>^</h2></button>
+<script>
+    let mybutton = document.getElementById("to-top");
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+      if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+        mybutton.style.display = "block";
+        mybutton.style.zIndex = "1";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+<?php
+$DATABASE_HOST = '';
+$DATABASE_USER = '';
+$DATABASE_PASS = '';
+$DATABASE_NAME = '';
